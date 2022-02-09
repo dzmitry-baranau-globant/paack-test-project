@@ -1,14 +1,14 @@
 import { createSlice, current, PayloadAction } from "@reduxjs/toolkit";
 import { IDelivery } from "../../utils/mockData";
 
-const initialState: { deliveries: IDelivery[]; activeDeliveryId: string } = {
+export const deliveriesInitialState: { deliveries: IDelivery[]; activeDeliveryId: string } = {
   deliveries: [],
   activeDeliveryId: "",
 };
 
 const { reducer: deliveriesReducer, actions } = createSlice({
   name: "deliveries",
-  initialState,
+  initialState: deliveriesInitialState,
   reducers: {
     setDeliveries: (
       state,
