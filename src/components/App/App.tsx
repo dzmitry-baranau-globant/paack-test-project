@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import DeliveryItemsList from "../DeliveryItemsList";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import DeliveryItem from "../DeliveryItem";
 
 function App() {
